@@ -1,9 +1,13 @@
 require 'snail.rb'
 
 describe 'snail' do
-  it 'deal with array of one' do
+  it 'deal with array of nil' do
     snail = Snail.new
     expect(snail.get_path([[]])).to eq ([])
+  end
+  it 'deal with array of one' do
+    snail = Snail.new
+    expect(snail.get_path([[1]])).to eq ([1])
   end
   it 'deal with array of two' do
     snail = Snail.new

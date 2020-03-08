@@ -3,6 +3,8 @@ class Snail
   def get_path(array)
     snail_path = []
     if array == [[]]
+    elsif array.length == 1
+      snail_path.push(array[0][0])
     else
       p array
       n = array[0].length
