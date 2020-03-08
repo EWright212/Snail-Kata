@@ -4,11 +4,12 @@ class Snail
     snail_path = []
     if array == [[]]
     else
-      for i in (0...array[0].length)
+      n = array[0].length
+      for i in (0...n)
         snail_path.push(array[0][i])
       end
-      for i in (0...array[1].length)
-        snail_path.push(array[1][1-i])
+      for i in (0...n)
+        snail_path.push(array[n-1][n-1-i])
       end
     end
     snail_path
